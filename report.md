@@ -81,6 +81,11 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 
 À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal transmis subi des déformations directement sur la carte émettrice cependant le signal est bien transmis et reçu. Le signal reçu diverge du signal émis en raison de la résonance créée par l'inductance du câble. Le données transmises sont quant à elles bien reçues par la carte réceptrice.
 
+**Conclusion**
+Pour une longueur de 25 cm, le débit maximal atteignable en UART est de
+
+<br>
+
 ### 3.2 Analyse des signaux UART avec un câble de 1m
 
 **115'200 bauds**
@@ -91,7 +96,10 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 **10'000'000 bauds**
 @import "TEK00003.PNG"
 
-À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal est envoyé est envoyé par la carte émettrice subit des déformations, 
+À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal est envoyé est envoyé par la carte émettrice subit des déformations.
+
+**Conclusion**
+Pour une longueur de 1 mètre, le débit maximal atteignable en UART est de
 
 ---
 
@@ -102,6 +110,11 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 Avec une fréquence de 115'200 bauds à 40'000'000 bauds, les signaux sont bien transmis et reçus par les deux cartes de développement. Les signaux sont subissent des déformations lors des augmentations de fréquence.
 
 À partir de 53'000'000 bauds, la communication ne fonctionne plus et les signaux n'ont plus de signification.
+
+**Conclusion**
+Pour une longueur de 25 cm, le débit maximal atteignable en LPUART est de
+
+<br>
 
 ### 4.2 Analyse des signaux LPUART avec un câble de 1m
 
@@ -131,17 +144,10 @@ La communication ne fonctionne toujours pas
 @import "TEK00012.PNG"
 @import "baud53m_lpuart.png"
 
+**Conclusion**
+Pour une longueur de 1m, le débit maximal atteignable en LPUART est de
+
 ---
 
 ## 5.1 Analyse des signaux SPI
 L'analyse des signaux SPI n'a pas été effectuée étant donné que les valeurs n'auraient pas été plus intéressantes que les analyses LPUART et UART.
-
----
-
-## 6 Réponse aux questions
-L'analyse des signaux SPI n'a pas été effectuée étant donné que les valeurs n'auraient pas été plus intéressantes que les analyses LPUART et UART.
-
-
-
-
-
