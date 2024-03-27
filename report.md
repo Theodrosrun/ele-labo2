@@ -134,7 +134,7 @@ Pour une longueur de 25 cm, le débit maximal atteignable en LPUART est donc de 
 @import "TEK00008.PNG"
 @import "baud40m_lpuart.png"
 
-40'000'000 bauds en retirant l'oscilloscope
+**40'000'000 bauds en retirant l'oscilloscope**
 La communication ne fonctionne toujours pas
 
 **40'000'000 petits câbles oscille branché**
