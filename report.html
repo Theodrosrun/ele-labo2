@@ -1,0 +1,446 @@
+<!DOCTYPE html><html><head>
+      <title>report</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/aiorio/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.12/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<img src="heig-vd.png" style="height:80px;">
+<h1 id="center-laboratoire-n02"><center> Laboratoire n°02 </center></h1>
+<h1 id="center-limites-de-linux-dans-un-contexte-temps-réel"><center> Limites de Linux dans un contexte temps réel </center></h1>
+<h2 id="centerdépartement--tic"><center>Département : TIC </center></h2>
+<h2 id="centerunité-denseignement-ptr"><center>Unité d'enseignement PTR </center></h2>
+<p>Auteur:     <strong>Alexandre Iorio</strong></p>
+<p>Professeur: <strong>Alexandre Corbaz</strong></p>
+<p>Assistant : <strong>Catel Torres Arzur Gabriel</strong></p>
+<p>Salle de labo : <strong>A05-b</strong></p>
+<p>Date : <strong>05.03.2024</strong></p>
+<div class="pagebreak"> </div>
+<h2 id="1-introduction">1. Introduction </h2>
+<p>Dans le cadre de ce laboratoire, nous allons expérimenter l’interface des timers POSIX et les limites de Linux en tant que système temps réel.</p>
+<h2 id="2-analyse-de-difference-entre-deux-codes">2 Analyse de difference entre deux codes </h2>
+<p>Dans un premier temps, nous executons le code <code>gettimeofday.c</code> qui va executer une boucle qui execute le fonction <code>gettimeofday()</code> et ecrire la sortie dans le fichier <code>results.txt</code>.</p>
+<p><strong>code</strong> <code>gettimeofday.c</code>:<br>
+</p><pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/time.h&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NB_MESURES</span> <span class="token expression"><span class="token number">30</span></span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> argc<span class="token punctuation">,</span> <span class="token keyword keyword-char">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword keyword-struct">struct</span> <span class="token class-name">timeval</span> tv<span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> i<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> NB_MESURES<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">gettimeofday</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tv<span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%2d : %ld.%06ld\n"</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> tv<span class="token punctuation">.</span>tv_sec<span class="token punctuation">,</span> tv<span class="token punctuation">.</span>tv_usec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-return">return</span> EXIT_SUCCESS<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre><p></p>
+<p><strong>results.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 4109.653766
+ 1 : 4109.655552
+ 2 : 4109.655565
+ 3 : 4109.655574
+ 4 : 4109.655582
+ 5 : 4109.655591
+ 6 : 4109.655599
+ 7 : 4109.655607
+ 8 : 4109.655615
+ 9 : 4109.655624
+10 : 4109.655632
+11 : 4109.655640
+12 : 4109.655648
+13 : 4109.655656
+14 : 4109.655664
+15 : 4109.655673
+16 : 4109.655681
+17 : 4109.655689
+18 : 4109.655697
+19 : 4109.655705
+20 : 4109.655713
+21 : 4109.655722
+22 : 4109.655730
+23 : 4109.655738
+24 : 4109.655746
+25 : 4109.655754
+26 : 4109.655762
+27 : 4109.655770
+28 : 4109.655779
+29 : 4109.655787
+
+</code></pre><p></p>
+<p>Puis, nous allons modifier le code dans <code>gettimeofday2.c</code> et utiliser un tableau de <code>struct timeval</code> puis, dans une autre boucle, print les valeurs du tableau puis on va sortir les valeurs dans <code>results2.txt</code>.</p>
+<p><strong>code</strong> <code>gettimeofday2.c</code>:<br>
+</p><pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;sys/time.h&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NB_MESURES</span> <span class="token expression"><span class="token number">30</span></span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> argc<span class="token punctuation">,</span> <span class="token keyword keyword-char">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword keyword-struct">struct</span> <span class="token class-name">timeval</span> tv<span class="token punctuation">[</span>NB_MESURES<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> i<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> NB_MESURES<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">gettimeofday</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tv<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> NB_MESURES<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%2d : %ld.%06ld\n"</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> tv<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>tv_sec<span class="token punctuation">,</span> tv<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>tv_usec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-return">return</span> EXIT_SUCCESS<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre><p></p>
+<p><strong>results2.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 4111.520325
+ 1 : 4111.520333
+ 2 : 4111.520338
+ 3 : 4111.520344
+ 4 : 4111.520350
+ 5 : 4111.520355
+ 6 : 4111.520361
+ 7 : 4111.520367
+ 8 : 4111.520373
+ 9 : 4111.520378
+10 : 4111.520384
+11 : 4111.520390
+12 : 4111.520395
+13 : 4111.520401
+14 : 4111.520407
+15 : 4111.520412
+16 : 4111.520418
+17 : 4111.520424
+18 : 4111.520429
+19 : 4111.520435
+20 : 4111.520441
+21 : 4111.520446
+22 : 4111.520452
+23 : 4111.520458
+24 : 4111.520463
+25 : 4111.520469
+26 : 4111.520475
+27 : 4111.520480
+28 : 4111.520486
+29 : 4111.520492
+
+</code></pre><p></p>
+<p>Afin d'analyser au mieux les differences, nous avons calculé la différence entre deux valeurs consécutives dans les deux fichiers puis établis nous avons tracé le résultat dans un graphique.</p>
+<img src="../code/resultats.png">
+<p>On voit clairement que le temps ecoulé entre 2 mesures consécutives est plus grand dans l'éxecution du premier code <code>gettimeofday.c</code> que dans l'éxecution du deuxieme code <code>gettimeofday2.c</code>. Cela est surement dû au fait que le premier code utilise un seul <code>struct timeval</code> et print les valeurs dans la même boucle alors  que le deuxième code utilise un tableau de <code>struct timeval</code> et fait le travail de printer les valeurs dans un deuxième temps.</p>
+<p>La granularité ainsi que la précision des valeurs de temps est de l'ordre de la <code>microseconde</code> dans les deux cas.</p>
+<p><em>selon explication du prof, on veut la granularité de la précision de la mesure de temps et non pas des resultats obtenus</em></p>
+<h2 id="3-horloges-posix">3 Horloges Posix </h2>
+<p>Nous allons repeter l'experience avec les horloges POSIX. Nous allons executer le code <code>gettimeofday3.c</code> qui va executer une boucle qui execute le fonction <code>clock_gettime()</code> sur les quatres horloges POSIX</p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>CLOCK_REALTIME
+CLOCK_MONOTONIC
+CLOCK_PROCESS_CPUTIME_ID
+CLOCK_THREAD_CPUTIME_ID
+</code></pre><p><strong>code</strong> <code>gettimeofday3.c</code>:<br>
+</p><pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;unistd.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;time.h&gt;</span></span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">NB_MESURES</span> <span class="token expression"><span class="token number">30</span></span></span>
+
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-char">char</span> <span class="token operator">*</span>posix_clocks<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">"CLOCK_REALTIME"</span><span class="token punctuation">,</span>
+    <span class="token string">"CLOCK_MONOTONIC"</span><span class="token punctuation">,</span>
+    <span class="token string">"CLOCK_PROCESS_CPUTIME_ID"</span><span class="token punctuation">,</span>
+    <span class="token string">"CLOCK_THREAD_CPUTIME_ID"</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-const">const</span> <span class="token class-name">clockid_t</span> posix_clock_ids<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    CLOCK_REALTIME<span class="token punctuation">,</span>
+    CLOCK_MONOTONIC<span class="token punctuation">,</span>
+    CLOCK_PROCESS_CPUTIME_ID<span class="token punctuation">,</span>
+    CLOCK_THREAD_CPUTIME_ID
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> argc<span class="token punctuation">,</span> <span class="token keyword keyword-char">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-struct">struct</span> <span class="token class-name">timespec</span> ts<span class="token punctuation">[</span>NB_MESURES<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> i<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>posix_clocks<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>posix_clocks<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// Get the time with the specified clock and store it in the ts array</span>
+        <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> NB_MESURES<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">clock_gettime</span><span class="token punctuation">(</span>posix_clock_ids<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>ts<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">perror</span><span class="token punctuation">(</span><span class="token string">"clock_gettime failed"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword keyword-return">return</span> EXIT_FAILURE<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token comment">// Write the time to a file with specified clock</span>
+        <span class="token keyword keyword-char">char</span> filename<span class="token punctuation">[</span><span class="token number">256</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token function">snprintf</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"%s.txt"</span><span class="token punctuation">,</span> posix_clocks<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        FILE <span class="token operator">*</span>fp <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>fp <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">perror</span><span class="token punctuation">(</span><span class="token string">"Failed to open file"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword keyword-return">return</span> EXIT_FAILURE<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> NB_MESURES<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">fprintf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">"%2d : %ld.%09ld\n"</span><span class="token punctuation">,</span> j<span class="token punctuation">,</span> ts<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>tv_sec<span class="token punctuation">,</span> ts<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>tv_nsec<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token function">fclose</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-return">return</span> EXIT_SUCCESS<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre><p></p>
+<p>et ecrire la sortie dans le fichier portant le <code>&lt;nom horloge&gt;.txt</code>.</p>
+<p>Voici le resultat obtenus</p>
+<p><strong>CLOCK_REALTIME.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 8446.132220770
+ 1 : 8446.132226670
+ 2 : 8446.132232550
+ 3 : 8446.132238190
+ 4 : 8446.132243880
+ 5 : 8446.132249610
+ 6 : 8446.132255400
+ 7 : 8446.132261070
+ 8 : 8446.132266690
+ 9 : 8446.132272310
+10 : 8446.132277950
+11 : 8446.132283560
+12 : 8446.132289190
+13 : 8446.132294810
+14 : 8446.132300430
+15 : 8446.132306060
+16 : 8446.132311680
+17 : 8446.132317300
+18 : 8446.132322930
+19 : 8446.132328570
+20 : 8446.132334200
+21 : 8446.132339830
+22 : 8446.132345460
+23 : 8446.132351130
+24 : 8446.132356760
+25 : 8446.132362400
+26 : 8446.132368020
+27 : 8446.132373670
+28 : 8446.132379290
+29 : 8446.132384910
+
+</code></pre><p></p>
+<p><strong>CLOCK_MONOTONIC.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 8446.147386030
+ 1 : 8446.147392250
+ 2 : 8446.147397990
+ 3 : 8446.147403650
+ 4 : 8446.147409330
+ 5 : 8446.147414990
+ 6 : 8446.147420640
+ 7 : 8446.147426320
+ 8 : 8446.147432010
+ 9 : 8446.147437670
+10 : 8446.147443330
+11 : 8446.147448980
+12 : 8446.147454630
+13 : 8446.147460300
+14 : 8446.147465930
+15 : 8446.147471580
+16 : 8446.147477300
+17 : 8446.147483040
+18 : 8446.147488690
+19 : 8446.147494370
+20 : 8446.147500020
+21 : 8446.147505660
+22 : 8446.147511320
+23 : 8446.147517110
+24 : 8446.147522770
+25 : 8446.147528390
+26 : 8446.147534050
+27 : 8446.147539740
+28 : 8446.147545400
+29 : 8446.147551040
+
+</code></pre><p></p>
+<p><strong>CLOCK_PROCESS_CPUTIME_ID.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 0.051119500
+ 1 : 0.051159720
+ 2 : 0.051195990
+ 3 : 0.051231690
+ 4 : 0.051267110
+ 5 : 0.051302820
+ 6 : 0.051338420
+ 7 : 0.051374030
+ 8 : 0.051409650
+ 9 : 0.051445240
+10 : 0.051480900
+11 : 0.051516360
+12 : 0.051551950
+13 : 0.051587350
+14 : 0.051622940
+15 : 0.051658490
+16 : 0.051694310
+17 : 0.051729770
+18 : 0.051765270
+19 : 0.051800760
+20 : 0.051836230
+21 : 0.051871950
+22 : 0.051907320
+23 : 0.051942800
+24 : 0.051978410
+25 : 0.052014060
+26 : 0.052049660
+27 : 0.052085180
+28 : 0.052120710
+29 : 0.052156330
+
+</code></pre><p></p>
+<p><strong>CLOCK_THREAD_CPUTIME_ID.txt</strong><br>
+</p><pre data-role="codeBlock" data-info="txt" class="language-txt txt"><code> 0 : 0.064892760
+ 1 : 0.064918920
+ 2 : 0.064942840
+ 3 : 0.064966420
+ 4 : 0.064989780
+ 5 : 0.065013100
+ 6 : 0.065036460
+ 7 : 0.065059770
+ 8 : 0.065083260
+ 9 : 0.065106630
+10 : 0.065130060
+11 : 0.065153500
+12 : 0.065176790
+13 : 0.065200200
+14 : 0.065223720
+15 : 0.065247360
+16 : 0.065270950
+17 : 0.065294480
+18 : 0.065318100
+19 : 0.065341730
+20 : 0.065364990
+21 : 0.065388570
+22 : 0.065411890
+23 : 0.065435370
+24 : 0.065458990
+25 : 0.065482600
+26 : 0.065505950
+27 : 0.065529290
+28 : 0.065552740
+29 : 0.065576470
+
+</code></pre><p></p>
+<p>Afin d'analyser au mieux les differences, nous avons calculé la différence entre deux valeurs consécutives dans les deux fichiers puis établis nous avons tracé le résultat dans un graphique.</p>
+<img src="../code/resultats2.png">
+<p>En analysant les resultats, on voit que, contrairement à la documentation de la méthode <code>clock_gettime()</code> obtenu sur <code>man clock_gettime</code></p>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>DESCRIPTION
+...
+
+           struct timespec {
+               time_t   tv_sec;        /* seconds */
+               long     tv_nsec;       /* nanoseconds */
+           };
+...
+</code></pre><p>les resultat onbtenus ont une granularité de <code>10[ns]</code> alors que la précision est de l'ordre de la <code>[ns]</code>.<br>
+Il apparait alors que le processeur présent sur la <code>DE1-SoC</code> n'est pas capable de mesurer le temps avec une granularité de <code>1[ns]</code>.</p>
+<p>En effet, si l'on se réfère à la frequqence du cpu qui est de 980[MHz], on peut calculer la granularité de la mesure de temps avec la formule suivante:</p>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="python3"><div class="input-div"><pre data-role="codeBlock" data-info="python {code_chunk_offset=0, cmd=&quot;python3&quot; output=&quot;markdown&quot;}" class="language-python python"><code>granularite <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">980e6</span>
+granularite <span class="token operator">=</span> granularite <span class="token operator">*</span> <span class="token number">1e9</span> <span class="token comment"># to get the result in [ns]</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token builtin">round</span><span class="token punctuation">(</span>granularite<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">" [ns]"</span><span class="token punctuation">)</span>
+</code></pre><div class="code-chunk-btn-group"><div class="run-btn btn btn-xs btn-primary"><span>▶︎</span></div><div class="run-all-btn btn btn-xs btn-primary">all</div></div><div class="status">running...</div></div><div class="output-div">
+<p>1.02  [ns]</p>
+</div></div><h2 id="4-conclusion">4. Conclusion </h2>
+<p>Noter que, quand bien meme les horloges POSIX sont plus précises que <code>gettimeofday()</code>, elles ne sont pas capable de mesurer le temps avec une granularité de <code>1[ns]</code> selon le CPU embarqué.</p>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#center-laboratoire-n02" class="md-toc-link">
+            </a><center><a href="#center-laboratoire-n02" class="md-toc-link"> Laboratoire n°02
+          </a></center></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#center-limites-de-linux-dans-un-contexte-temps-réel" class="md-toc-link"></a><center><a href="#center-limites-de-linux-dans-un-contexte-temps-réel" class="md-toc-link"> Limites de Linux dans un contexte temps réel</a>
+          </center></summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#centerdépartement--tic" class="md-toc-link">
+            </a><center><a href="#centerdépartement--tic" class="md-toc-link">Département : TIC
+          </a></center></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#centerunité-denseignement-ptr" class="md-toc-link">
+            </a><center><a href="#centerunité-denseignement-ptr" class="md-toc-link">Unité d'enseignement PTR
+          </a></center></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#1-introduction" class="md-toc-link">
+            <ol>
+<li>Introduction</li>
+</ol>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2-analyse-de-difference-entre-deux-codes" class="md-toc-link">
+            <p>2 Analyse de difference entre deux codes</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#3-horloges-posix" class="md-toc-link">
+            <p>3 Horloges Posix</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-conclusion" class="md-toc-link">
+            <ol start="4">
+<li>Conclusion</li>
+</ol>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
