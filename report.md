@@ -79,12 +79,10 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 **10'000'000 bauds**
 @import "TEK00002.PNG"
 
-À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal transmis subi des déformations directement sur la carte émettrice cependant le signal est bien transmis et reçu. Le signal reçu diverge du signal émis en raison de la résonance créée par l'inductance du câble. Le données transmises sont quant à elles bien reçues par la carte réceptrice.
+À une vitesse de transmission de 10 millions de bauds, il est observé que le signal envoyé est altéré dès sa source d'émission, bien que son envoi et sa réception soient effectués correctement. La variation entre le signal envoyé et celui reçu est attribuable à la résonance induite par l'inductance du câble. Néanmoins, les données sont correctement reçues.
 
 **Conclusion**
 Pour une longueur de 25 cm, le débit maximal atteignable en UART est donc de 10'000'00 bauds.
-
-<br>
 
 ### 3.2 Analyse des signaux UART avec un câble de 1m
 
@@ -96,7 +94,7 @@ Pour une longueur de 25 cm, le débit maximal atteignable en UART est donc de 10
 **10'000'000 bauds**
 @import "TEK00003.PNG"
 
-À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal est envoyé est envoyé par la carte émettrice subit des déformations.
+À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal est envoyé est envoyé par la carte émettrice subit des déformations mais sa forme reste interprétable.
 
 **Conclusion**
 Pour une longueur de 1 mètre, le débit maximal atteignable en UART est donc de 10'000'00 bauds.
@@ -107,14 +105,12 @@ Pour une longueur de 1 mètre, le débit maximal atteignable en UART est donc de
 
 ### 4.1 Analyse des signaux LPUART avec un câble de 25cm
 
-Avec une fréquence de 115'200 bauds à 40'000'000 bauds, les signaux sont bien transmis et reçus par les deux cartes de développement. Les signaux sont subissent des déformations lors des augmentations de fréquence.
+Entre une fréquence de 115 200 et 40 000 000 bauds, les signaux sont efficacement émis et captés par les deux cartes de développement, bien qu'ils se déforment avec l'augmentation de la fréquence.
 
-À partir de 53'000'000 bauds, la communication ne fonctionne plus et les signaux n'ont plus de signification.
+Au-delà de 53 000 000 bauds, la communication échoue, rendant les signaux inintelligibles.
 
 **Conclusion**
 Pour une longueur de 25 cm, le débit maximal atteignable en LPUART est donc de 40'000'000 bauds.
-
-<br>
 
 ### 4.2 Analyse des signaux LPUART avec un câble de 1m
 
