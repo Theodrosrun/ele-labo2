@@ -29,7 +29,7 @@ Dans ce laboratoire, nous allons visualiser à l'oscilloscope des trames binaire
 
 ---
 
-## 2.
+## 2. Matériel et configuration
 
 ### 2.1 Matériel et branchement
 
@@ -51,7 +51,7 @@ Les commandes suivantes ont été utilisées pour configurer les ports série su
 | start                | start           | start            |
 |                      |                 |                  |
 
-Test de la communication série entre les deux cartes de développement.
+Test de la communication série entre les deux cartes de développement :
 
 @import "cartes.jpg"
 
@@ -79,17 +79,12 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 **10'000'000 bauds**
 @import "TEK00002.PNG"
 
-À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal transmis subi des déformations directement sur la carte émettrice cependant
- est bien transmis et reçu par les deux cartes de développement. Le signal reçu diverge du signal émis en raison de la résonance créée par l'inductance du câble.
-
-Le données transmises sont quant à elles bien reçues par la carte réceptrice.
+À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal transmis subi des déformations directement sur la carte émettrice cependant le signal est bien transmis et reçu. Le signal reçu diverge du signal émis en raison de la résonance créée par l'inductance du câble. Le données transmises sont quant à elles bien reçues par la carte réceptrice.
 
 ### 3.2 Analyse des signaux UART avec un câble de 1m
 
 **115'200 bauds**
 @import "TEK00004.PNG"
-
-Les mêmes tests ont été réalisés avec un câble de 1m.
 
 À une fréquence de 115'200 bauds, nous pouvons voir que le signal est bien transmis et reçu par les deux cartes de développement. Le signal est quasiment identique sur les deux cartes de développement.
 
@@ -139,6 +134,11 @@ La communication ne fonctionne toujours pas
 ---
 
 ## 5.1 Analyse des signaux SPI
+L'analyse des signaux SPI n'a pas été effectuée étant donné que les valeurs n'auraient pas été plus intéressantes que les analyses LPUART et UART.
+
+---
+
+## 6 Réponse aux questions
 L'analyse des signaux SPI n'a pas été effectuée étant donné que les valeurs n'auraient pas été plus intéressantes que les analyses LPUART et UART.
 
 
