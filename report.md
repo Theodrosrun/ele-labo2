@@ -82,7 +82,7 @@ Nous avons branché l'oscilloscope sur les ports série des deux cartes de déve
 À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal transmis subi des déformations directement sur la carte émettrice cependant le signal est bien transmis et reçu. Le signal reçu diverge du signal émis en raison de la résonance créée par l'inductance du câble. Le données transmises sont quant à elles bien reçues par la carte réceptrice.
 
 **Conclusion**
-Pour une longueur de 25 cm, le débit maximal atteignable en UART est de
+Pour une longueur de 25 cm, le débit maximal atteignable en UART est donc de 10'000'00 bauds.
 
 <br>
 
@@ -99,7 +99,7 @@ Pour une longueur de 25 cm, le débit maximal atteignable en UART est de
 À une fréquence de 10'000'000 bauds, nous pouvons voir que le signal est envoyé est envoyé par la carte émettrice subit des déformations.
 
 **Conclusion**
-Pour une longueur de 1 mètre, le débit maximal atteignable en UART est de
+Pour une longueur de 1 mètre, le débit maximal atteignable en UART est donc de 10'000'00 bauds.
 
 ---
 
@@ -112,7 +112,7 @@ Avec une fréquence de 115'200 bauds à 40'000'000 bauds, les signaux sont bien 
 À partir de 53'000'000 bauds, la communication ne fonctionne plus et les signaux n'ont plus de signification.
 
 **Conclusion**
-Pour une longueur de 25 cm, le débit maximal atteignable en LPUART est de
+Pour une longueur de 25 cm, le débit maximal atteignable en LPUART est donc de 40'000'000 bauds.
 
 <br>
 
@@ -145,7 +145,7 @@ La communication ne fonctionne toujours pas
 @import "baud53m_lpuart.png"
 
 **Conclusion**
-Pour une longueur de 1m, le débit maximal atteignable en LPUART est de
+Pour une longueur de 1m, le débit maximal atteignable en LPUART est donc de 20'000'000 bauds.
 
 ---
 
